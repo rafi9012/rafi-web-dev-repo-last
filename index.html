@@ -1,33 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Solution resources page</title>
-
-    <!-- DaisyYi + tailwind CDN -->
+    <title>Legal-Website-Make</title>
+    
+    
+    <!-- daisyUi+ tailwind cdn -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!-- poopins font -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-<style>
-    .poppins-font {
-  font-family: "Poppins", sans-serif;}
-</style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind customized config -->
+     <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            
+          }
+        }
+      }
+    }
+    </script>
+     
+  <!-- EB GARAMOND FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <style>
+        .eb-garamond{
+             font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+        }
+         
+     
+    </style>
 </head>
-<body class=".poppins-font">
-
+<body class="eb-garamond">
     <!-- header section -->
-     <header>
+     <header class="container mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+     
+    </div>
+    <div class="flex">
+    <img class="h-8 w-6	" src="images/business.png" alt="">
+    <a class="btn btn-ghost ">Justice</a>
+    </div>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a class="text-xs ">Home</a></li>
+      <li><a class="text-xs ">Services ></a></li>
+      <li><a class="text-xs ">Cases ></a></li>
+      <li><a class="text-xs">Blog ></a></li>
+      <li><a class="text-xs" >Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn btn-error text-white">Free Consultation</a>
+  </div>
+</div>
+      </nav>
 
      </header>
-
+ 
     <!-- main section -->
-     <main>
+     <main class="container mx-auto">
+      <div class="bg-[url('/images/banner.png')] bg-no-repeat  bg-contain h-dvh w-full"  >
+        <!-- writing section -->
+         <div class="max-w-xs lg:max-w-2xl mx-auto justify-center  text-center lg:pt-[120px] ">
+          <div class="lg:pb-6 pb-2">
+          <h1 class="text-[#FFFFFF] lg:text-7xl lg:font-extrabold">We Provide Effective Legal Solutions</h1>
+           </div>
+          <div class="lg:pb-6">
+            <h4 class="text-[#E7E7E7] lg:text-lg">There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour.</h4>
+
+          </div>
+        
+        
+         <!-- input -->
+          <div class="">
+            <input type="text" placeholder="Search Your Services" class="input input-bordered w-full max-w-md text-[#FFFFFF] font-semibold" />
+            <button class="btn btn-active btn-accent ml-3 text-[#FFFFFF] font-semibold">Search</button>
+          </div>
+           </div>
+         
+  
+        
+        
+      </div>
+
 
      </main>
 
